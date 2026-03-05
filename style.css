@@ -21,24 +21,6 @@ color:#222;
 
 
 /* NAVBAR */
-
-.navbar{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:18px 8%;
-
-background:linear-gradient(
-90deg,
-#9d0208,
-#c1121f,
-#9d0208
-);
-
-}
-
 .navbar{
     display:flex;
     justify-content:space-between;
