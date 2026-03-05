@@ -83,13 +83,35 @@ font-size:14px;
 
 
 /* HERO */
-
 .hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+}
 
-text-align:center;
+.hero-box{
+    background:white;
+    padding:40px 30px;
+    border-radius:25px;
+    text-align:center;
+    max-width:500px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
 
-padding:120px 20px 80px;
+.hero-box h1{
+    font-size:48px;
+    margin:0;
+}
 
+.hero-box span{
+    color:#c40000;
+}
+
+.hero-box p{
+    margin-top:10px;
+    color:#444;
+    font-size:18px;
 }
 
 .draco{
