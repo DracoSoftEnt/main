@@ -84,36 +84,35 @@ font-size:14px;
 
 /* HERO */
 .hero{
+    width:100%;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:500px;
+    margin:auto;
+}
+
+.hero{
     display:flex;
     justify-content:center;
-    align-items:center;
-    padding:60px 20px;
 }
 
-.hero-box{
+.hero-content{
     background:white;
-    padding:40px 30px;
+    padding:35px;
     border-radius:25px;
-    text-align:center;
     max-width:500px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
-
-.hero-box h1{
-    font-size:48px;
-    margin:0;
-}
-
-.hero-box span{
-    color:#c40000;
-}
-
-.hero-box p{
-    margin-top:10px;
-    color:#444;
-    font-size:18px;
-}
-
 .draco{
 
 color:black;
