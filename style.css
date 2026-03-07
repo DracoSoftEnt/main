@@ -4,6 +4,8 @@ padding:0;
 box-sizing:border-box;
 }
 
+/* BODY */
+
 body{
 
 font-family:-apple-system,BlinkMacSystemFont,"Inter",sans-serif;
@@ -14,6 +16,8 @@ radial-gradient(circle at 80% 70%, #ffdede 0%, transparent 40%),
 linear-gradient(180deg,#ffffff,#ffeaea,#ffffff);
 
 color:#222;
+
+transition:background 0.4s,color 0.4s;
 
 }
 
@@ -133,9 +137,9 @@ transition:0.3s;
 
 .card:hover{
 
-transform:translateY(-6px);
+transform:translateY(-8px);
 
-box-shadow:0 20px 40px rgba(0,0,0,0.1);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
 
 }
 
@@ -164,16 +168,6 @@ border-radius:20px;
 font-size:13px;
 
 text-decoration:none;
-
-transition:0.25s;
-
-}
-
-.service-btn:hover{
-
-transform:translateY(-2px);
-
-box-shadow:0 0 15px rgba(193,18,31,0.5);
 
 }
 
@@ -484,40 +478,135 @@ color:#666;
 
 
 
-/* WHATSAPP FLOTANTE */
+/* BOTON MODO OSCURO */
 
-.whatsapp-float{
+.dark-btn{
 
-position:fixed;
+background:#eee;
 
-bottom:25px;
+border:none;
 
-right:25px;
+padding:8px 12px;
 
-width:55px;
+border-radius:20px;
 
-height:55px;
+cursor:pointer;
 
-background:#c1121f;
-
-border-radius:50%;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-box-shadow:0 0 20px rgba(193,18,31,0.6);
-
-z-index:1000;
-
-transition:0.3s;
+font-size:16px;
 
 }
 
-.whatsapp-float:hover{
 
-transform:scale(1.1);
+
+/* ===== DARK MODE ===== */
+
+.dark-mode{
+
+background:#121212 !important;
+color:#eaeaea;
+
+}
+
+/* NAVBAR */
+
+.dark-mode .navbar{
+
+background:#0f0f0f;
+
+}
+
+.dark-mode .menu a{
+
+color:white;
+
+}
+
+.dark-mode .logo{
+
+color:white;
+
+}
+
+/* SERVICES */
+
+.dark-mode .card{
+
+background:#1e1e1e;
+
+color:white;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+
+}
+
+/* STREAMING */
+
+.dark-mode .streaming{
+
+background:#121212;
+
+}
+
+.dark-mode .streaming-sub{
+
+color:#ccc;
+
+}
+
+.dark-mode .stream-card{
+
+background:#1e1e1e;
+
+border:1px solid #333;
+
+}
+
+/* REVIEWS */
+
+.dark-mode .review{
+
+background:#1e1e1e;
+
+color:white;
+
+}
+
+/* CONTACT */
+
+.dark-mode .contact{
+
+background:#121212;
+
+}
+
+.dark-mode .contact-card{
+
+background:#1e1e1e;
+
+color:white;
+
+}
+
+/* PAYMENTS */
+
+.dark-mode .payments{
+
+background:#121212;
+
+}
+
+.dark-mode .payment-text{
+
+color:#ccc;
+
+}
+
+/* FOOTER */
+
+.dark-mode footer{
+
+background:#0f0f0f;
+
+color:#aaa;
 
 }
