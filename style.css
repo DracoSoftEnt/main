@@ -4,8 +4,6 @@ padding:0;
 box-sizing:border-box;
 }
 
-/* BODY */
-
 body{
 
 font-family:-apple-system,BlinkMacSystemFont,"Inter",sans-serif;
@@ -16,8 +14,6 @@ radial-gradient(circle at 80% 70%, #ffdede 0%, transparent 40%),
 linear-gradient(180deg,#ffffff,#ffeaea,#ffffff);
 
 color:#222;
-
-transition:background 0.4s,color 0.4s;
 
 }
 
@@ -137,9 +133,9 @@ transition:0.3s;
 
 .card:hover{
 
-transform:translateY(-8px);
+transform:translateY(-6px);
 
-box-shadow:0 20px 40px rgba(0,0,0,0.15);
+box-shadow:0 20px 40px rgba(0,0,0,0.1);
 
 }
 
@@ -168,6 +164,16 @@ border-radius:20px;
 font-size:13px;
 
 text-decoration:none;
+
+transition:0.25s;
+
+}
+
+.service-btn:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 0 15px rgba(193,18,31,0.5);
 
 }
 
@@ -478,135 +484,40 @@ color:#666;
 
 
 
-/* BOTON MODO OSCURO */
+/* WHATSAPP FLOTANTE */
 
-.dark-btn{
+.whatsapp-float{
 
-background:#eee;
+position:fixed;
 
-border:none;
+bottom:25px;
 
-padding:8px 12px;
+right:25px;
 
-border-radius:20px;
+width:55px;
 
-cursor:pointer;
+height:55px;
 
-font-size:16px;
+background:#c1121f;
 
-}
+border-radius:50%;
 
+display:flex;
 
+align-items:center;
 
-/* ===== DARK MODE ===== */
+justify-content:center;
 
-.dark-mode{
+box-shadow:0 0 20px rgba(193,18,31,0.6);
 
-background:#121212 !important;
-color:#eaeaea;
+z-index:1000;
 
-}
-
-/* NAVBAR */
-
-.dark-mode .navbar{
-
-background:#0f0f0f;
+transition:0.3s;
 
 }
 
-.dark-mode .menu a{
+.whatsapp-float:hover{
 
-color:white;
-
-}
-
-.dark-mode .logo{
-
-color:white;
-
-}
-
-/* SERVICES */
-
-.dark-mode .card{
-
-background:#1e1e1e;
-
-color:white;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.5);
-
-}
-
-/* STREAMING */
-
-.dark-mode .streaming{
-
-background:#121212;
-
-}
-
-.dark-mode .streaming-sub{
-
-color:#ccc;
-
-}
-
-.dark-mode .stream-card{
-
-background:#1e1e1e;
-
-border:1px solid #333;
-
-}
-
-/* REVIEWS */
-
-.dark-mode .review{
-
-background:#1e1e1e;
-
-color:white;
-
-}
-
-/* CONTACT */
-
-.dark-mode .contact{
-
-background:#121212;
-
-}
-
-.dark-mode .contact-card{
-
-background:#1e1e1e;
-
-color:white;
-
-}
-
-/* PAYMENTS */
-
-.dark-mode .payments{
-
-background:#121212;
-
-}
-
-.dark-mode .payment-text{
-
-color:#ccc;
-
-}
-
-/* FOOTER */
-
-.dark-mode footer{
-
-background:#0f0f0f;
-
-color:#aaa;
+transform:scale(1.1);
 
 }
